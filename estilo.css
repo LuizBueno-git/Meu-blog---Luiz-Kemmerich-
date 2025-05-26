@@ -1,0 +1,73 @@
+/* -------------------- Cabeçalho -------------------- */
+
+body {
+	color: #333333; /* cinza escuro, menos agressivo que preto */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte limpa e moderna */
+      font-size: 16px; /* tamanho confortável para leitura */
+      line-height: 1.6; /* espaçamento entre linhas */
+      font-weight: 400; /* peso normal */
+      letter-spacing: 0.02em; /* leve espaçamento entre letras */
+      background-color: #f9f9f9; /* fundo clarinho para contraste suave */
+      margin: 20px; /* uma margem legal para não ficar grudado na borda */
+}
+
+#area-cabecalho {
+	background-color: #f7b600;
+	padding: 15px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#area-logo,
+#area-menu {
+	padding: 10px;
+}
+
+.branco {
+	color: #fff;
+}
+
+/* -------------------- Links -------------------- */
+a {
+
+	text-decoration: none;
+	padding: 8px 12px;
+}
+a:link,
+a:visited { color: #000; }
+a:hover    { color: #555; text-decoration: none; }
+
+/* -------------------- Área de conteúdo -------------------- */
+#area-conteudo {
+	width: 1100px;        /* largura total do container */
+	margin: 0 auto;       /* centraliza na tela */
+	display: flex;        /* coloca as colunas lado a lado */
+	gap: 20px;            /* espaço entre colunas */
+	align-items: flex-start;
+}
+
+/* ----- Coluna esquerda (biografia) ----- */
+#area-postagens {
+	flex: 0 0 720px;      /* largura fixa de 720 px, não encolhe */
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* ----- Coluna direita (lateral) ----- */
+#area-texto-lateral {
+	flex: 0 0 250px;      /* largura fixa de 250 px, não encolhe */
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* -------------------- Tipografia -------------------- */
+.postagem h2   { margin-top: 0; color: #333; }
+.data-postagem { font-size: .9em; color: #777; display: block; margin-bottom: 15px; }
+.postagem p    { line-height: 1.7; color: #444; }
+
+/* Links dentro de postagens */
+.postagem a    { display: inline-block; margin-top: 15px;
